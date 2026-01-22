@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class Student{
+    public:
+    string name;
+    int roll_no;
+    string semester;
+    char section;
+    
+};
+int main() {
+    Student s1[4];
+    s1[0]={"Daniya",159,"Second",'D'};
+    s1[1]={"Amber",163,"First",'A'};
+    s1[2]={"Alishba",153,"Third",'A'};
+    s1[3]={"Aimen",152,"Second",'E'};
+    
+    for(int i=0;i<4;i++){
+        if(s1[i].section=='A'){
+            cout<<"The student's name is "<<s1[i].name<<endl;
+            cout<<"The student's roll number is "<<s1[i].roll_no<<endl;
+            cout<<"The student is "<<s1[i].semester<<" semester"<<endl;
+            cout<<"The student is in  "<<s1[i].section<<" section"<<endl;
+        }
+    }
+  
+    
+    
+
+    return 0;
+}
